@@ -18,7 +18,7 @@ gulp.task("mover_html",function(){
 gulp.task('pruebaJS', function(){
 	gulp.src(rutas.rutaJS)
 	.pipe(uglify())
-	//.pipe(obfuscate())
+	.pipe(obfuscate())
 	.pipe(gulp.dest('public/assets/js/'))
 });
 //Toma el archivo scss y lo convierte a css y lo copia en la carpeta publica

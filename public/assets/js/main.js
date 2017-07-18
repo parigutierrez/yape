@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".carousel").carousel()}),console.log("bye");
+$(".carousel.carousel-slider").carousel({fullWidth:!0}),console.log("bye");
