@@ -7,12 +7,17 @@ const apiUsers        = require('./api/users'); //Endpoints relacionados al User
 
 const app = express();
 const db  = levelup('./data/users', {valueEncoding: 'json'});
+//Se agrega path
+const path =require('path');
 
 const format = morganjson({
   short: ':method :url :status',
   length: ':res[content-length]',
   'response-time': ':response-time ms'
 });
+//se agrega static
+app.use('/static', express.static(path.join(__dirname,'node_modules')));
+app.use('/static', express.static(path.join(__dirname,'/public')));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
