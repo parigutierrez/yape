@@ -7,7 +7,7 @@ const apiUsers        = require('./api/users'); //Endpoints relacionados al User
 
 const app = express();
 const db  = levelup('./data/users', {valueEncoding: 'json'});
-//Se agrega path
+//Se agrega path concatenar la ruta
 const path =require('path');
 
 const format = morganjson({
@@ -15,7 +15,7 @@ const format = morganjson({
   length: ':res[content-length]',
   'response-time': ':response-time ms'
 });
-//se agrega static
+//se agrega static para dejar estáticas las rutas 
 app.use('/static', express.static(path.join(__dirname,'node_modules')));
 app.use('/static', express.static(path.join(__dirname,'/public')));
 

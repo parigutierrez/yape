@@ -28,15 +28,15 @@ gulp.task('pruebaCSS', function(){
 	.on('error', sass.logError))
 	.pipe(gulp.dest('public/assets/css/'))
 });
-//Cuando se encuentre algun cambio en el archivo scss el browser se actualice
+//Cuando se encuentre algun cambio en el archivo scss el browser se actualiza
 gulp.task('sass-watch', ['pruebaCSS'],function(){
 	browserSync.reload();
 });
-//Cuando se encuentre algun cambio en el archivo html el browser se actualice
+//Cuando se encuentre algun cambio en el archivo html el browser se actualiza
 gulp.task('html-watch',['mover_html'],function(){
 	browserSync.reload();
 });
-//Cuando se encuentre algun cambio en el archivo js el browser se actualice
+//Cuando se encuentre algun cambio en el archivo js el browser se actualiza
 gulp.task('js-watch',['pruebaJS'],function(){
 	browserSync.reload();
 });
