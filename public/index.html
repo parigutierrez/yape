@@ -1,32 +1,49 @@
 <!DOCTYPE html>
+<html lang="es">
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<title>Yape</title>
 </head>
 <body>
-	 <div class="carousel carousel-slider center" data-indicators="true">
-	    <div class="carousel-item red white-text" href="#one!">
-	     <a href="#"><img src="img/icons/icon-people.png"></a>
-	      <h2>First Panel</h2>
-	      <p class="white-text">This is your first panel</p>
-	    </div>
-	    <div class="carousel-item amber white-text" href="#two!">
-	    	<a href=""><img src="img/icons/happy-person.png"></a>
-	      <h2>Second Panel</h2>
-	      <p class="white-text">This is your second panel</p>
-	    </div>
-	    <div class="carousel-item green white-text" href="#three!">
-	      <a href="#three!"><img src="img/icons/group-people.png"></a>	
-	      <h2>Third Panel</h2>
-	      <p class="white-text">This is your third panel</p>
-	    </div>
-	    <div class="carousel-fixed-item center">
-	      <a class="btn waves-effect white grey-text darken-text-2">REGISTRARME</a>
-	    </div>
-  </div>
+	<div class="container principal">
+		<div class="row">
+			<div class="carousel carousel-slider center size" data-indicators="true">
+			    <div class="container carousel-item" href="#one!">
+			    	<div class="row">
+			      	<div class=""><img class="img-regis" src="img/icons/icon-people.png"></div>
+			      	</div>
+			      	<div class="row">
+				        <h2 class="gris">Paga a tus amigos</h2>
+				        <p class="gris">Paga a quien quieras desde donde quieras, sin usar efectivo</p>
+			  		</div>
+			    </div>
+			    <div class="container carousel-item" href="#two!">
+			    	<div class="row">
+			        <div><img class="img-regis"  src="img/icons/happy-person.png"></div>
+			        </div>
+			        <div class="row">
+			      	    <h2 class="gris">Sin número de cuenta</h2>
+			    	    <p class="gris">Elige a quien pagar desde tu lista de contactos</p>
+			  		</div>
+			    </div>
+			    <div class="container carousel-item" href="#three!">
+			    	<div class="row">
+			        <div><img class="img-regis" src="img/icons/group-people.png"></div>	
+			        </div>
+			        <div class="row">
+			        	<h2 class="gris">Gratis y seguro</h2>
+			      		<p class="gris">La transacción es inmediata y gratuita de una cuenta a otra</p></div>
+			    	</div>
+		  	</div>
+		    <div class="carousel-fixed-item center">
+			      <a class="btn waves-effect amarillo grey-text darken-text-2" href="2.html">REGISTRARME</a>
+			</div>
+		</div>	
+	</div>		
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 	<script src="assets/js/main.js"></script>

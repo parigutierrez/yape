@@ -1,6 +1,58 @@
-body{
-	
+$Rojo-bullet:#f64552;
+$Gris-bullet:#f8f8f8;
+$Amarillo-botones:#fbd43b;
+$Gris-dark:#212121;
+$Gris-letrasoft:#8f8f8f;
+$Turquesa-terminos-y-condiciones:#00c3a3;
+$Morado-Entrada-numeros:#49233b;
+$Morado-light:#451e36;
+$Morado-dark:#38052a;
+
+.principal{
+	padding-top: 10%;
 }
-h1{
-	color:green;
+div.carousel.carousel-slider.center.initialized{
+	min-height: 400px;
+}
+
+
+
+.carousel{
+ 	.indicators{
+		.indicator-item{
+			background-color: gray;
+		}
+		.indicator-item.active{
+			background-color: red;
+		}
+	}
+}
+
+.img-regis{
+	width: 250px;
+	height: 250px;
+}
+.img-lock{
+	width: 140px;
+	height: 125px;
+}
+.img-small{
+	width: 80px;
+	height: 45px;
+}
+
+.gris{
+	color: $Gris-letrasoft;
+}
+
+.btn.amarillo{
+	background-color: $Amarillo-botones !important;
+
+}
+
+.black-text{
+	color:black;
+}
+.cont-img{
+	padding-bottom: 5%;
 }

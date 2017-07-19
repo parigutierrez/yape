@@ -9,15 +9,16 @@ const app = express();
 const db  = levelup('./data/users', {valueEncoding: 'json'});
 //Se agrega path concatenar la ruta
 const path =require('path');
+//se agrega static para dejar estáticas las rutas 
+app.use('/static', express.static(path.join(__dirname,'node_modules')));
+app.use('/static', express.static(path.join(__dirname,'/public')));
 
 const format = morganjson({
   short: ':method :url :status',
   length: ':res[content-length]',
   'response-time': ':response-time ms'
 });
-//se agrega static para dejar estáticas las rutas 
-app.use('/static', express.static(path.join(__dirname,'node_modules')));
-app.use('/static', express.static(path.join(__dirname,'/public')));
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -28,6 +29,7 @@ let router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
+ // res.sendFile(__dirname + '/public/index.html');
 });
 
 app.use('/api',apiUsers(router,db));

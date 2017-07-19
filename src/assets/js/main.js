@@ -1,4 +1,4 @@
 
-$('.carousel.carousel-slider').carousel({fullWidth: true});        
-
-console.log("bye");
+$('.carousel.carousel-slider').carousel({fullWidth: true});  
+      
+console.log("hiss");

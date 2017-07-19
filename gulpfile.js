@@ -10,7 +10,7 @@ var rutas = {
 	html: "./src/**/*.html"
 };
 //Los cambios que se realizan en html de desarrollo los copia al html de public
-gulp.task("mover_html",function(){
+gulp.task('mover_html',function(){
 	gulp.src(rutas.html)
 		.pipe(gulp.dest('./public'));
 });
@@ -40,3 +40,5 @@ gulp.task('html-watch',['mover_html'],function(){
 gulp.task('js-watch',['pruebaJS'],function(){
 	browserSync.reload();
 });
+gulp.task('3comandos',['mover_html','pruebaJS','pruebaCSS']);
+
