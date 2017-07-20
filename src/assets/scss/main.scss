@@ -1,12 +1,4 @@
-$Rojo-bullet:#f64552;
-$Gris-bullet:#f8f8f8;
-$Amarillo-botones:#fbd43b;
-$Gris-dark:#212121;
-$Gris-letrasoft:#8f8f8f;
-$Turquesa-terminos-y-condiciones:#00c3a3;
-$Morado-Entrada-numeros:#49233b;
-$Morado-light:#451e36;
-$Morado-dark:#38052a;
+@import "_variables";
 
 .principal{
 	padding-top: 10%;
@@ -16,14 +8,13 @@ div.carousel.carousel-slider.center.initialized{
 }
 
 
-
 .carousel{
  	.indicators{
 		.indicator-item{
-			background-color: gray;
+			background-color: $Gris-letrasoft;
 		}
 		.indicator-item.active{
-			background-color: red;
+			background-color: $Rojo-bullet;
 		}
 	}
 }
@@ -49,10 +40,17 @@ div.carousel.carousel-slider.center.initialized{
 	background-color: $Amarillo-botones !important;
 
 }
+.masAlto{
+	height: 600px;
+	padding-top: 5%;
+}
 
 .black-text{
 	color:black;
 }
 .cont-img{
 	padding-bottom: 5%;
+}
+.color-turq{
+	color:$Turquesa-terminos-y-condiciones;
 }

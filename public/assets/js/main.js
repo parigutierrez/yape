@@ -1,1 +1,1 @@
-$(".carousel.carousel-slider").carousel({fullWidth:!0}),console.log("hiss");
+$(".carousel.carousel-slider").carousel({fullWidth:!0});
