@@ -28,8 +28,8 @@ div.carousel.carousel-slider.center.initialized{
 	height: 125px;
 }
 .img-small{
-	width: 80px;
-	height: 45px;
+	width: 48px;
+	height: 30px;
 }
 
 .gris{
@@ -38,7 +38,10 @@ div.carousel.carousel-slider.center.initialized{
 
 .btn.amarillo{
 	background-color: $Amarillo-botones !important;
-
+}
+.circle-btn{
+	width: 70px;
+	height: 70px;
 }
 .masAlto{
 	height: 600px;
@@ -53,4 +56,14 @@ div.carousel.carousel-slider.center.initialized{
 }
 .color-turq{
 	color:$Turquesa-terminos-y-condiciones;
+}
+.bg-fin{
+	background-color: $Morado-dark;
+}
+.interrogacion{
+	width: 25px;
+	height: 25px;
+	float:right;
+	margin-right:3%;
+	margin-top: 3% 
 }

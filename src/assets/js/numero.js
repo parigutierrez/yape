@@ -3,14 +3,11 @@ var contPhone = document.getElementById('phone_number').value;
 var checkBx = document.getElementById('filled-in-box').checked;
 
 document.getElementById("filled-in-box").addEventListener("click", function(){
-	
 	 document.getElementById("continuar").removeAttribute("disabled");
-
 	 enlazar();
 });
 
 document.getElementById("phone_number").addEventListener("onkeyup", function(){
-
 	if(contPhone.length===10){
 		alert("10");
 	}
@@ -28,8 +25,21 @@ document.getElementById("continuar").addEventListener("click", function(){
 		"terms": checkBx
 	}).then(function(response){
 		console.log(response);
+
+	if(response.message === "Usuario válido"){
+       var codigo = response.data.code.toString();
+        alert("Codigo de validación","success");
+      
+    } else {
+      alert("Ingresa otro número", "error");
+    }	
+
 	}).catch(function(error){
 		console.log(error);
 	})
 
 });
+
+
+
+

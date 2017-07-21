@@ -1,5 +1,6 @@
-//alert("CódigoJS");
-var contPhone = document.getElementById('phone_number').value;
+
+
+/*var contPhone = document.getElementById('phone_number').value;
 var checkBx = document.getElementById('filled-in-box').value;
 console.log(checkBx);	
 $.post('http://localhost:3000/api/resendCode',{
@@ -10,3 +11,4 @@ $.post('http://localhost:3000/api/resendCode',{
 }).catch(function(error){
 	console.log(error);
 })
+*/
